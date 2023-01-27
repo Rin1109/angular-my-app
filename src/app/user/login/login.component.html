@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <label>New login</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="newLogin"
+    >
+
+    <p>{{createNewLogin}}</p>
+
+    <button
+      type="button"
+      class="btn btn-info"
+      [disabled]="newLogin === ''"
+      (click)="onCreateNewLogin()"
+    >Add new login</button>
+  </div>
+</div>
+
+
+

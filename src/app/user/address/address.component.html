@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <label>New address</label>
+
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="newAddress"
+    >
+
+    <p>{{createAddress}}</p>
+
+    <button
+      type="button"
+      class="btn btn-info"
+      [disabled]="newAddress === ''"
+      (click)="onCreateAddress()"
+    >Add new address</button>
+  </div>
+</div>
+
+
+
