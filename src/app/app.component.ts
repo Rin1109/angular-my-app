@@ -6,13 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showInfo = false;
-  log:any = [];
+  title = 'Hello'
 
-  onToggleInfo() {
-    this.showInfo = !this.showInfo;
-    this.log.push(new Date());
-}
 
 
 }
