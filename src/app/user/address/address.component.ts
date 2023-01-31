@@ -9,6 +9,8 @@ export class AddressComponent implements OnInit {
 
   newAddress = '';
   createAddress = '';
+  animals = false;
+  fruits:any = ['apple', 'lemon', 'cherry', 'banana']
 
 
   constructor() { }
@@ -22,4 +24,11 @@ export class AddressComponent implements OnInit {
     setTimeout(() => {
       this.createAddress = ''}, 2000)}
 
+  toggleAnimals() {
+    this.animals = !this.animals;
+  }
+
+  fruitsList() {
+   this.fruits = !this.fruits
+  }
 }

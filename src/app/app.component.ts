@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  showInfo = false;
+  log:any = [];
+
+  onToggleInfo() {
+    this.showInfo = !this.showInfo;
+    this.log.push(this.log.length + 1);
+}
+
+
 }

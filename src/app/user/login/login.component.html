@@ -15,6 +15,33 @@
       [disabled]="newLogin === ''"
       (click)="onCreateNewLogin()"
     >Add new login</button>
+    <hr>
+    <button
+      type="button"
+      class="btn btn-warning"
+      (click)="secretInfo = !secretInfo"
+    >
+      Show a secret info
+    </button>
+    <p *ngIf="secretInfo">This is a very secret info =^_^= </p>
+
+    <hr>
+
+    <button
+      type="button"
+      class="btn btn-success"
+      (click)="rundomNumber()"
+    >
+      Random number
+    </button>
+
+    <p
+      *ngFor="let number of random"
+      [ngStyle]="{backgroundColor: number == 2 ? 'yellow' : 'blue' }"
+      [ngClass]="{'white': number<2}"
+    >{{number}}</p>
+
+
   </div>
 </div>
 

@@ -5,3 +5,7 @@ button {
 input {
   margin: 10px 0 10px 0;
 }
+
+.blue-font {
+  color: blue;
+}

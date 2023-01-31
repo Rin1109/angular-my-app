@@ -5,6 +5,24 @@
       <hr>
       <app-servers></app-servers>
       <hr>
+
+      <p *ngIf="showInfo">Something interesting</p>
+
+<!--      <button-->
+<!--        class="btn btn-primary"-->
+<!--        (click)="showInfo = !showInfo"-->
+<!--      >Display Details</button>-->
+      <button
+        class="btn btn-primary"
+        (click)="onToggleInfo()"
+      >Display Details</button>
+
+      <p *ngFor="let logItem of log"
+         [ngStyle]="{backgroundColor: logItem >=5 ? 'blue' : 'pink'}"
+         [ngClass]="{'white-text': logItem>=5}"
+>{{logItem}}</p>
+
+      <hr>
       <app-login></app-login>
       <hr>
       <app-address></app-address>

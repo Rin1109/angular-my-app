@@ -4,3 +4,7 @@ input {
 button {
   width: 200px;
 }
+
+.white {
+  color: white;
+}
