@@ -17,9 +17,9 @@
         (click)="onToggleInfo()"
       >Display Details</button>
 
-      <p *ngFor="let logItem of log"
-         [ngStyle]="{backgroundColor: logItem >=5 ? 'blue' : 'pink'}"
-         [ngClass]="{'white-text': logItem>=5}"
+      <p *ngFor="let logItem of log; let i = index"
+         [ngStyle]="{backgroundColor: i >=4 ? 'blue' : 'pink'}"
+         [ngClass]="{'white-text': i >= 4}"
 >{{logItem}}</p>
 
       <hr>
