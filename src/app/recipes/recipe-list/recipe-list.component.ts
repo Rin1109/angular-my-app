@@ -9,7 +9,10 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'This is a simple test', 'https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/british_shakshuka_26737_16x9.jpg')
+    new Recipe(
+      'A Test Recipe',
+      'This is a simple test',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv7l4vM-5YFzciaNWcQzNTCxe_AqhNx1Bw7tbKYh-rbhY9EnxrgYw7iu8Vopac5ppdaME&usqp=CAU')
   ];
 
   constructor() { }
