@@ -15,19 +15,19 @@ export class CockpitComponent implements OnInit {
   }
 
   onAddServer() {
-    this.newElements.push({
-      type: 'server',
-      name: this.newName,
-      content: this.newContent
-    })
-  }
+  //   this.newElements.push({
+  //     type: 'server',
+  //     name: this.newName,
+  //     content: this.newContent
+  //   })
+   }
 
   onAddBlueprint() {
-    this.newElements.push({
-      type: 'blueprint',
-      name: this.newName,
-      content: this.newContent
-    })
-  }
+  //   this.newElements.push({
+  //     type: 'blueprint',
+  //     name: this.newName,
+  //     content: this.newContent
+  //   })
+}
 
 }

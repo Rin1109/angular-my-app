@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./practice.component.css']
 })
 export class PracticeComponent {
-
-  newElements:any[] = [];
+  newElements:any[] = [{type: 'server', name: 'Testserver', content: 'Just a test'}];
 
 
 }
