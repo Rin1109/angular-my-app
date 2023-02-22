@@ -30,8 +30,7 @@ import { ServerElementComponent } from './practice/server-element/server-element
     PracticeComponent,
     CockpitComponent,
     ServerElementComponent,
-
-  ],
+ ],
   imports: [
     BrowserModule,
     FormsModule
