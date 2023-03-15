@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello'
+  clicks: number = 0;
 
-
-
+  // onChanged(increased: any) {
+  //   increased == true ? this.clicks++ : this.clicks--;
+  // }
+  onChanged(increased: any) {
+    increased == true ? this.clicks++ : this.clicks--;
+  }
 }

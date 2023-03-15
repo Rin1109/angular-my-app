@@ -11,10 +11,9 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-import { PracticeComponent } from './practice/practice.component';
-import { CockpitComponent } from './practice/cockpit/cockpit.component';
-import { ServerElementComponent } from './practice/server-element/server-element.component';
-
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 
 @NgModule({
@@ -27,9 +26,9 @@ import { ServerElementComponent } from './practice/server-element/server-element
     ShoppingListComponent,
     ShoppingEditComponent,
     RecipeDetailComponent,
-    PracticeComponent,
-    CockpitComponent,
-    ServerElementComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
  ],
   imports: [
     BrowserModule,

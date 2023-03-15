@@ -5,7 +5,15 @@
       <app-recipes></app-recipes>
       <app-shopping-list></app-shopping-list>
       <hr>
-      <app-practice></app-practice>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Клики: {{clicks}}</h2>
+          <app-game-control (onChanged)="onChanged($event)">
+
+          </app-game-control> <!-- (onChanged)="onChanged($event)";-->
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
